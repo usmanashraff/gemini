@@ -18,7 +18,7 @@ const app = express(process.env.IMAGEKIT_ENDPOINT)
 app.use(bodyParser.json());
 app.use(express.json())
 app.use(cors({
-    origin:process.env.CLIENT_URL,
+    origin:'https://geminiserver-epvgn6iem-usman-ashrafs-projects.vercel.app',
     credentials: true,
 }))
 
