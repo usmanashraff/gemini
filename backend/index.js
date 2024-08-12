@@ -18,7 +18,7 @@ const app = express(process.env.IMAGEKIT_ENDPOINT)
 app.use(bodyParser.json());
 app.use(express.json())
 app.use(cors({
-    origin:'https://geminiserver-epvgn6iem-usman-ashrafs-projects.vercel.app',
+    origin:'https://gemini-ten-livid.vercel.app',
     credentials: true,
 }))
 
@@ -36,7 +36,7 @@ app.get('/api/upload', (req, res)=>{
     res.send(result);
 })
 app.get('/', (req,res)=>{
-  res.send("hello vercel", process.env.env.CLIENT_URL)
+  res.send("hello vercel")
 
 })
 
