@@ -35,6 +35,10 @@ app.get('/api/upload', (req, res)=>{
     var result = imagekit.getAuthenticationParameters();
     res.send(result);
 })
+app.get('/', (req,res)=>{
+  res.send("hello vercel")
+
+})
 
 app.get('/api/userchats',ClerkExpressRequireAuth(),
  async(req, res)=>{
