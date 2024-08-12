@@ -36,7 +36,7 @@ app.get('/api/upload', (req, res)=>{
     res.send(result);
 })
 app.get('/', (req,res)=>{
-  res.send("hello vercel this is client url to give access control", process.env.CLIENT_URL)
+  res.send("hello vercel")
 
 })
 
