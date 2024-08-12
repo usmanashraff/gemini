@@ -7,6 +7,7 @@ function Home() {
 
   const [typingStatus, setTypingStatus] = useState(true)
 
+  console.log("api url", import.meta.env.VITE_API_URL)
   return (
    <section className="relative flex flex-col items-center pt-12 justify-center gap-6 min-h-screen max-w-[1236px] mx-auto md:flex-row">
     <div className="absolute top-3 right-3">
